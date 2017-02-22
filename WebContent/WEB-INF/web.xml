@@ -12,14 +12,20 @@
 
   <servlet>
 	  <servlet-name>CoreServlet</servlet-name>
-	  <servlet-class>
-	  	com.meeting.weixin.servlet.CoreServlet
-	  </servlet-class>
+	  <servlet-class> com.bid.weixin.servlet.CoreServlet </servlet-class>
+	    </servlet>
+	  <servlet>
+	   <servlet-name>oauthServlet</servlet-name>
+        <servlet-class>com.bid.weixin.servlet.OAuthServlet</servlet-class>
   </servlet>
  
   <servlet-mapping>
   	 <servlet-name>CoreServlet</servlet-name>
   	 <url-pattern>/CoreServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>oauthServlet</servlet-name>
+        <url-pattern>/oauthServlet</url-pattern>
+    </servlet-mapping>
   
 </web-app>

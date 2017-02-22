@@ -39,7 +39,7 @@ public class CommonUtil {
      * @param outputStr 提交的数据
      * @return JSONObject(通过JSONObject.get(key)的方式获取json对象的属性值)
      */
-	public static JSONObject htpsRequest(String requestUrl, String requestMethod, String outputStr){
+	public static JSONObject httpsRequest(String requestUrl, String requestMethod, String outputStr){
 		JSONObject jsonObject = null;
 		try {
             // 创建SSLContext对象，并使用我们指定的信任管理器初始化
@@ -115,9 +115,15 @@ public class CommonUtil {
 				// 获取token失败
 				log.error("获取token失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
 			}
-		}
+	
 		return token;
 		}
+	}
+
+
+	 
+	
+	
 	}
 	
 	
