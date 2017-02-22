@@ -115,32 +115,11 @@ public class CommonUtil {
 				// 获取token失败
 				log.error("获取token失败 errcode:{} errmsg:{}", jsonObject.getInt("errcode"), jsonObject.getString("errmsg"));
 			}
-	
-		return token;
 		}
+		
+		return token;
 	}
 
-
-	 
-	
 	
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
